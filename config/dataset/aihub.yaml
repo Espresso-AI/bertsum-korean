@@ -1,0 +1,7 @@
+
+path: "AIHub-Summarization"
+
+df:
+  val_ratio: 0.1
+  random_state: 42
+  shuffle: True
