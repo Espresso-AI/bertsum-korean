@@ -35,6 +35,6 @@ engine:
   save_result: True
 
 log:
-  project: Reranking_Demo
-  name: ${mode.model}--exp_0--${now:%Y-%m-%d}/${now:%H-%M-%S}
+  project: bertsum-korean
+  name: exp_0--${now:%Y-%m-%d}/${now:%H-%M-%S}
   save_dir: ./log
