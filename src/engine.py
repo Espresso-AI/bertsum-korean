@@ -227,9 +227,9 @@ class ExtSum_Engine(pl.LightningModule):
         r2 = 100 * (sum(r2) / len(r2))
         rL = 100 * (sum(rL) / len(rL))
 
-        self.log('test_rouge1', r1, prog_bar=True)
-        self.log('test_rouge2', r2, prog_bar=True)
-        self.log('test_rougeL', rL, prog_bar=True)
+        print('rouge1: ', r1)
+        print('rouge2: ', r2)
+        print('rougeL: ', rL)
 
         if self.save_result:
             path = 'result/{}'.format(datetime.datetime.now().strftime('%y-%m-%d'))
