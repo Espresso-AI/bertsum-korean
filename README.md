@@ -9,7 +9,7 @@ AI Hub 문서요약 텍스트 데이터셋은 신문기사, 기고문, 잡지, �
 ## Training
 한국어 기반의 BERT는 [klue/bert-base](https://huggingface.co/klue/bert-base)로부터 가져왔으며, 학습은 T4 1대에서 진행되었습니다.  
 
-<img src="https://github.com/Espresso-AI/bertsum-korean/blob/main/misc/bertsum_training.png" width="880" height="400">
+<img src="https://github.com/Espresso-AI/bertsum-korean/blob/main/misc/bertsum_training.png" width="850" height="350">
 
 추출 요약 레이블이 주어지지 않은 대부분의 영문 벤치마크 데이터셋(eg. CNN / DM, XSum, WikiHow, etc.)과 다르게, 본 데이터셋은 사람이 직접 작성한 추출 요약 레이블을 가지고 있습니다. 이로 인해 모델 학습 시, 추출 요약 모델을 binary classification으로 학습시키기 위한 별도의 오라클 알고리즘이 필요하지 않습니다.  
 
